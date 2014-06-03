@@ -83,9 +83,26 @@ Our project is Open Source so feel free to download anything you need and help u
       	<div id="configurations">
       		<h3>Print Configurations <small>// For Slic3r and Cura</small><button type="button" class="btn btn-success pull-right">Download</button></h3>
       		<img src="/images/torres.jpg" class="img-responsive img-thumbnail" alt="Which one will you use?">
-      		<p>Based on our experience in 3D Printing, we've made some base configurations in order to make it easier to print good quality objects from day one.
-      			
-      		</p>
+      		<p>Based on our experience in 3D Printing, we've made some base configurations in order to make it easier to print good quality objects from day one.</p>
+      		<p>You will find separated configurations for the single extruder and the dual extruder option. The corresponding files are organized as follows: </p>
+
+      		<pre>
+		      		<code>
+		Configurations
+		├── Single Extruder
+		│   ├──Slic3r
+		│   ├──Cura	
+		└── Dual Extruder
+		    ├──Slic3r
+		    └──Cura
+		      		</code>
+      		</pre>
+      		
+      		<div class="alert alert-info">
+      			<p>Note the name of the configuration file! <br>
+      			 It contains the material, the initials and the version. <em>Configuraciones.txt</em> contains explanation for every config.</p>
+      		</div>
+      		
       	</div>
       
       </section>
@@ -94,8 +111,23 @@ Our project is Open Source so feel free to download anything you need and help u
       	<div id="firmwares">
       		<h3>Firmwares <small>// Adapted Marlin to our BCN3D+</small><button type="button" class="btn btn-success pull-right">Download</button></h3>
       		<p>In order to give our 3D Printer the intelegence needed to make awesome objects, you need to upload the latest firmware.
-      		We currently give support to BCN3D+ firmwares. The <strong>standard</strong> and the <strong>dual extruder</strong>.
-      		</p>
+      		We currently give support to BCN3D+ firmwares. The <strong>standard</strong> and the <strong>dual extruder</strong>.</p>
+      		<p>Even thought we don't support older firmwares, you are still able to download the BCN3D version for all those firsts BCN3D out in the wild.</p>
+      		
+      		<pre>
+		      		<code>
+		Firmwares
+		├── BCN3D
+		├── BCN3D+
+		└── Dual Extruder
+
+		      		</code>
+      		</pre>
+
+      		<div class="alert alert-info">
+      			<p>Before uploading a new firmware be sure to follow all the steps and indications. Also remember to install the <a href="https://code.google.com/p/u8glib/" target="_blank">U8glib</a> in you Arduino libraries!</p>
+      		</div>
+      		
       	</div>
       
       </section>
@@ -107,6 +139,21 @@ Our project is Open Source so feel free to download anything you need and help u
       		<p>RepRapBCN is commited to the global Open Source Project REPRAP. It means you can download all the source files, even the designs of the mechanical pieces that compose the printer.
       		The objective is to get faster and better feedback from the community using our printers. If you detect any error or have any improvements, please let us know by creating an <strong>Issue</strong> in the GitHub Repository.
       		</p>
+      		
+      		<p>
+      				You will find folders for the BCN3D+, the dual extruder and pretty soon other upgrades. In each folder there is a BOM (bill of materials), a complete Assembly and the printed parts.
+      		</p>
+      		<div class="panel panel-info">
+      			<div class="panel-heading">
+      				<h3 class="panel-title">Github visualization</h3>
+      			</div>
+      			<div class="panel-body">
+      				<p><em>- Check this out! -</em> Now directly from your browser, you can preview the STL file in 3D and keep track of all the changes. Github is pretty awesome huh?</p>
+      			
+      				<!-- <script src="https://embed.github.com/view/3d/<username>/<repo>/<ref>/<path_to_file>"></script> -->
+
+      			</div>
+      		</div>
       	</div>
       
       </section>
@@ -117,6 +164,9 @@ Our project is Open Source so feel free to download anything you need and help u
       		<img src="/images/manuals.jpg" class="img-responsive img-thumbnail" alt="X axis picture">
       		<p>We've made some pretty awesome manuals to help you assembling the BCN3D+. We have two versions, the <strong>PDF</strong> and the <strong>3DVIA</strong>.
       		All the manuals are based on the 3D model of the printer, so you'll be able to see 3D assemblies with all the parts and pieces.
+      		</p>
+      		<p>
+      			Again, the manuals are supposed to guide you in the process of assembling the printer. If you detect any mistake or improvement, please let us know by submitting and Issue in the git repo.
       		</p>
       		<p>The good stuff comes when you use the 3DVIA manuals. An executable application lets you rotate, zoom and select the parts in a 3D dimensional way. <em>Easy as pie!</em></p>
       	</div>

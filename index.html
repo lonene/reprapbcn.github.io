@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -18,9 +18,20 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>RepRapBCN Downloads Page</h1>
+          <a href="#home"><h1>RepRapBCN Downloads Page</h1></a>
         <p>Here you can download all the files related to your favorite Open Source 3D printer, the BCN3D+.</p>
         
+          <hr>
+        <!--    MENU DE NAVEGACION-->
+        <ul>
+            <li><a href="#configurations">Print Configurations</a></li>  
+            <li><a href="#firmwares">Firmwares</a></li>
+            <li><a href="#cad">CAD</a></li>
+            <li><a href="#manuals">Manuals</a></li>
+            <li><a href="#sd">SD Workshop</a></li>
+        </ul>  
+        
+               
         <img src="/images/bcn3d+.jpg" class="img-responsive" alt="Designed and manufacured in Barcelona">
         <a href="http://fundaciocim.org" target="_blank"><img width="180px" src="/images/logos.png" class="center-block img-responsive" alt="Fundacio CIM & UPC"></a>
         
@@ -28,7 +39,7 @@
         
       </header>
       <!--       INTRODUCCION -->
-      <section>
+      <section id="home">
         <h3>
 <a name="welcome-to-the-downloads-page" class="anchor" href="#welcome-to-the-downloads-page"><span class="octicon octicon-link"></span></a>Welcome to the Downloads Page.</h3>
 
@@ -41,47 +52,15 @@ Our project is Open Source so feel free to download anything you need and help u
 
 <p>Currently we support the repos listed in the table below. The first icon will take you to the repository in GitHub and the second one lets you download all the data directly in a <em><strong>.zip</strong></em></p>
       </section>
+        
       <!-- SECCIONES -->
-      <section>
-      	<!-- Menu de navegacion -->
-      	<ul class="list-group">
-				  <li class="list-group-item"><a href="#configurations">Print Configurations</a>
-				  	<div class="btn-group-sm pull-right">	
-					 	 	<button type="button" class="btn btn-default"><a target="_blank" href="https://github.com/reprapbcn/Configurations"><span class="glyphicon glyphicon-new-window"></span> Open in Github</a></button>
-					  	<button type="button" class="btn btn-default"><a href="https://github.com/reprapbcn/Configurations/archive/master.zip"><span class="glyphicon glyphicon-download"></span> Download</a></button>
-				  	</div>
-				  </li>
-				  <li class="list-group-item"><a href="#firmwares">Firmwares</a>
-				  	<div class="btn-group-sm pull-right">	
-					 	 	<button type="button" class="btn btn-default"><a target="_blank" href="https://github.com/reprapbcn/Firmwares"><span class="glyphicon glyphicon-new-window"></span> Open in Github</a></button>
-					  	<button type="button" class="btn btn-default"><a href="https://github.com/reprapbcn/Firmwares/archive/master.zip"><span class="glyphicon glyphicon-download"></span> Download</a></button>
-				  	</div>
-				  </li>
-				  <li class="list-group-item"><a href="#cad">CAD</a>
-				  	<div class="btn-group-sm pull-right">	
-					 	 	<button type="button" class="btn btn-default"><a target="_blank" href="https://github.com/reprapbcn/CAD"><span class="glyphicon glyphicon-new-window"></span> Open in Github</a></button>
-					  	<button type="button" class="btn btn-default"><a href="https://github.com/reprapbcn/CAD/archive/master.zip"><span class="glyphicon glyphicon-download"></span> Download</a></button>
-				  	</div>
-				  </li>
-				  <li class="list-group-item"><a href="#manuals">Manuals</a>
-				  	<div class="btn-group-sm pull-right">	
-					 	 	<button type="button" class="btn btn-default"><a target="_blank" href="https://github.com/reprapbcn/Manuals"><span class="glyphicon glyphicon-new-window"></span> Open in Github</a></button>
-					  	<button type="button" class="btn btn-default"><a href="https://github.com/reprapbcn/Manuals/archive/master.zip"><span class="glyphicon glyphicon-download"></span> Download</a></button>
-				  	</div>				  
-				  </li>
-				  <li class="list-group-item"><a href="#sd">SD Workshop</a>
-				  	<div class="btn-group-sm pull-right">	
-					 	 	<button type="button" class="btn btn-default"><a target="_blank" href="https://github.com/reprapbcn/SD-Workshop"><span class="glyphicon glyphicon-new-window"></span> Open in Github</a></button>
-					  	<button type="button" class="btn btn-default"><a href="https://github.com/reprapbcn/SD-Workshop/archive/master.zip"><span class="glyphicon glyphicon-download"></span> Download</a></button>
-				  	</div>				  
-				  </li>
-			  </ul>
-      </section>
       
       <section>
       	<hr>
       	<div id="configurations">
-      		<h3>Print Configurations <small>// For Slic3r and Cura</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Configurations/archive/master.zip">Download</a></h3>
+      		<h3>Print Configurations <small>// For Slic3r and Cura</small>
+                <a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Configurations/archive/master.zip">Download</a>
+            <a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Configurations">Github</a></h3>
       		<img src="/images/torres.jpg" class="img-responsive img-thumbnail" alt="Which one will you use?">
       		<p>Based on our experience in 3D Printing, we've made some base configurations in order to make it easier to print good quality objects from day one.</p>
       		<p>You will find separated configurations for the single extruder and the dual extruder option. The corresponding files are organized as follows: </p>
@@ -109,7 +88,7 @@ Our project is Open Source so feel free to download anything you need and help u
       <section>
       	<hr>
       	<div id="firmwares">
-      		<h3>Firmwares <small>// Adapted Marlin to our BCN3D+</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Firmwares/archive/master.zip">Download</a></h3>
+      		<h3>Firmwares <small>// Adapted Marlin to our BCN3D+</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Firmwares/archive/master.zip">Download</a><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Firmwares">Github</a></h3>
       		<p>In order to give our 3D Printer the intelegence needed to make awesome objects, you need to upload the latest firmware.
       		We currently give support to BCN3D+ firmwares. The <strong>standard</strong> and the <strong>dual extruder</strong>.</p>
       		<p>Even thought we don't support older firmwares, you are still able to download the BCN3D version for all those firsts BCN3D out in the wild.</p>
@@ -134,7 +113,7 @@ Our project is Open Source so feel free to download anything you need and help u
       <section>
       	<hr>
       	<div id="cad">
-      		<h3>CAD <small>// From the solidworks file to the STL</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/CAD/archive/master.zip">Download</a></h3>
+      		<h3>CAD <small>// From the solidworks file to the STL</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/CAD/archive/master.zip">Download</a><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/CAD">Github</a></h3>
 		<img src="/images/assembly.jpg" class="img-responsive img-thumbnail" alt="from the computer to your desk">
       		<p>RepRapBCN is commited to the global Open Source Project REPRAP. It means you can download all the source files, even the designs of the mechanical pieces that compose the printer.
       		The objective is to get faster and better feedback from the community using our printers. If you detect any error or have any improvements, please let us know by creating an <strong>Issue</strong> in the GitHub Repository.
@@ -160,7 +139,7 @@ Our project is Open Source so feel free to download anything you need and help u
       <section>
       	<hr>
       	<div id="manuals">
-      		<h3>Manuals <small>// Get your allen keys ready</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Manuals/archive/master.zip">Download</a></h3>
+      		<h3>Manuals <small>// Get your allen keys ready</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Manuals/archive/master.zip">Download</a><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/Manuals">Github</a></h3>
       		<img src="/images/manuals.jpg" class="img-responsive img-thumbnail" alt="X axis picture">
       		<p>We've made some pretty awesome manuals to help you assembling the BCN3D+. We have two versions, the <strong>PDF</strong> and the <strong>3DVIA</strong>.
       		All the manuals are based on the 3D model of the printer, so you'll be able to see 3D assemblies with all the parts and pieces.
@@ -175,7 +154,7 @@ Our project is Open Source so feel free to download anything you need and help u
       <section>
       	<hr>
       	<div id="sd">
-      		<h3>SD Workshop <small>// All the SD content in one place</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/SD-Workshop/archive/master.zip">Download</a></h3>
+      		<h3>SD Workshop <small>// All the SD content in one place</small><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/SD-Workshop/archive/master.zip">Download</a><a class="btn btn-success pull-right" role="button" href="https://github.com/reprapbcn/SD-Workshop">Github</a></h3>
       		<img src="/images/workshop.jpg" class="img-responsive img-thumbnail" alt="Teaching how to assemble and use our 3D printer">
       		<p>If you are attending one of our <strong>Workshops</strong> and you prefer to download the latest documents or your SD card is outdated, just download the .zip and you're ready to go.
       		It contains everything to follow the workshop and get your 3D printer up and running</p>
@@ -249,7 +228,7 @@ Our project is Open Source so feel free to download anything you need and help u
       <footer>
         <p><small>Hosted on GitHub Pages
         <br>
-        Custom made in Barcelona for <a href="http://reprapbcn.com" target="_blank">RepRapBCN</a></small></p>
+        Custom made in Barcelona by <a href="http://reprapbcn.com" target="_blank">RepRapBCN</a></small></p>
       </footer>
     </div>
          
